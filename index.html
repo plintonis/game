@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обновления игры</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Первое обновление</h1>
+    <div class="update-container" onclick="toggleGallery()">
+        <div class="update-details">
+            <div class="update-title">Обновление: Новые виды оружия</div>
+            <div class="update-description">В этом обновлении добавлены 5 новых видов оружия.</div>
+        </div>
+        <div class="image-gallery" id="imageGallery">
+            <div class="image-item">
+                <img src="https://i.ibb.co/dWv7QcV/image.png" alt="Image 1" onclick="openModal(this)">
+                <div class="image-details">
+                    <div class="image-title">Бейсбольная бита</div>
+                    <div class="image-description">гладкая деревянная или металлическая клюшка, используемая в бейсболе.</div>
+                </div>
+            </div>
+            <div class="image-item">
+                <img src="https://i.ibb.co/BCXFgrY/image2.png" alt="Image 2" onclick="openModal(this)">
+                <div class="image-details">
+                    <div class="image-title">Монтировка</div>
+                    <div class="image-description">многофункциональный вид ручного слесарного инструмента.</div>
+                </div>
+            </div>
+            <div class="image-item">
+                <img src="https://i.ibb.co/FKwv0Zg/image3.png" alt="Image 3" onclick="openModal(this)">
+                <div class="image-details">
+                    <div class="image-title">Ката́на</div>
+                    <div class="image-description">длинный японский меч.</div>
+                </div>
+            </div>
+            <div class="image-item">
+                <img src="https://i.ibb.co/JQvktJk/image4.png" alt="Image 4" onclick="openModal(this)">
+                <div class="image-details">
+                    <div class="image-title">снайперская винтовка</div>
+                    <div class="image-description">боевая винтовка, конструкция которой обеспечивает повышенную точность стрельбы.</div>
+                </div>
+            </div>
+            <div class="image-item">
+                <img src="https://i.ibb.co/H2pLzdj/image5.png" alt="Image 5" onclick="openModal(this)">
+                <div class="image-details">
+                    <div class="image-title">Микро-Узи</div>
+                    <div class="image-description">израильский малогабаритный пистолет-пулемёт.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal" class="modal" onclick="closeModal()">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
